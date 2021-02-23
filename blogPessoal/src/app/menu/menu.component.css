@@ -1,6 +1,10 @@
 .fs-16 {
   font-size: 16pt;
 }
+.nav-item img {
+  width: 50px;
+  height: 50px;
+}
 a {
   cursor: pointer;
   text-decoration: none;
