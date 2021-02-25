@@ -11,8 +11,9 @@ export class MenuComponent implements OnInit {
   nome = environment.nome
   foto = environment.foto
   constructor(
-    private rota: Router
-  ) { }
+    private rota: Router,
+
+  ) {}
 
   ngOnInit(){
   }
@@ -24,4 +25,5 @@ export class MenuComponent implements OnInit {
     environment.token = ''
     environment.id = 0
   }
+
 }

@@ -16,7 +16,9 @@ export class LoginComponent implements OnInit {
   constructor(
     private auth: AuthService,
     private router: Router
-  ) { }
+  ) {
+    environment.token = ''
+   }
 
   ngOnInit() {
     window.scroll(0,0)
