@@ -15,16 +15,16 @@
       <ul class="navbar-nav mr-auto d-flex align-items-center">
         <li class="nav-item">
           <img
-            src="{{foto}}"
+            src="{{ foto }}"
             alt="Foto de perfil"
             class="img-fluid rounded-circle"
           />
         </li>
         <li class="nav-item pl-3">
-          <p class="m-0 font-weight-bold text-white fs-16">{{nome}}</p>
+          <p class="m-0 font-weight-bold text-white fs-16">{{ nome }}</p>
         </li>
         <li class="nav-item pl-3">
-          <a href="#"
+          <a [routerLink]="['/user-edit', id]"
             ><p class="text-white fs-16 m-0">
               <i class="far fa-edit" aria-hidden="true"></i></p
           ></a>
@@ -32,7 +32,7 @@
       </ul>
       <ul class="navbar-nav ml-auto d-flex align-items-center">
         <li class="nav-item pl-3">
-          <a (click)='sair()' class="m-0 font-weight-bold text-white fs-16"
+          <a (click)="sair()" class="m-0 font-weight-bold text-white fs-16"
             >Sair <i class="fas fa-sign-out-alt"></i
           ></a>
         </li>
